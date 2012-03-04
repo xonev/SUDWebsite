@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - JoomSEO</name>
+	<author>Phill Brown</author>
+	<creationDate>September 2007</creationDate>
+	<copyright>(C) Phill Brown. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>pbrown@bxss.com.au</authorEmail>
+	<authorUrl>www.bxss.com.au</authorUrl>
+	<version>1.5.2</version>
+	<description><![CDATA[
+		JoomSEO gives your more automated control of the TITLE, META, content output.
+		The settings to the right work well by default.
+	]]></description>
+	<files>
+		<filename plugin="JoomSEO">JoomSEO.php</filename>
+	</files>
+	<params>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="Title Options" label="" description="" />
+		
+		<param name="titleLength" type="text" default="127" size="5" label="Maximum Title Length" description="
+			Maximum title length in characters.
+			Different search engines have different tactics requarding the weighing and truncating of title lengths.
+			Too big may be considered spamming.
+		" />
+		
+		<param name="prependTitle" type="text" default="" size="100" label="Prepend Title" description="Text to be prepended to the title. '{prepended text here} | TITLE'." />
+		
+		<param name="titleOrder" type="list" default="1" label="Title Order" description="
+			Order of elements in the title.
+			Depending on your chosen site name and content will affect which method you choose to use.
+			The first 3 or more words probably have the most weighting.
+			" >
+			<option value="1">Heading-Paragraph | Site Name | Keywords</option>
+			<option value="2">Heading-Paragraph | Keywords | Site Name</option>
+			<option value="3">Site Name | Heading-Paragraph | Keywords</option>
+			<option value="4">Site Name | Keywords | Heading-Paragraph</option>
+			<option value="5">Keywords | Site Name | Heading-Paragraph</option>
+			<option value="6">Keywords | Heading-Paragraph | Site Name</option>
+		</param>
+		
+		<param name="appendTitle" type="text" default="" size="100" label="Append Title" description="Text to be appended to the title. 'TITLE | {appended text here}'." />
+		
+		<param name="@spacer" type="spacer" default="Title Site Name" label="" description="" />
+		
+		<param name="showTitleSiteName" type="radio" default="1" label="Enabled" description="Display the site name in the title.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="Title Content Heading" label="" description="" />
+		
+		<param name="showContentHeading" type="radio" default="1" label="Enabled" description="Display the content heading in the title.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="Title First Paragraph" label="" description="" />
+		
+		<param name="showFirstParagraph" type="radio" default="0" label="Enabled" description="Display the first paragraph in the title.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="paragraphMinLength" type="text" default="20" size="5" label="Minimum Paragraph Length)" description="Minimum paragraph length.  This is to stop the paragaph stopping at short sentences such as 'Joomla 1.'0.12" />
+		<param name="paragraphLength" type="text" default="50" size="5" label="Maximum Paragraph Length" description="Maximum length of the paragraph." />
+
+		<param name="@spacer" type="spacer" default="Title Keywords" label="" description="" />
+		
+		<param name="showTitleKeywords" type="radio" default="0" label="Enabled" description="Display keywords in the title.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="keywordMinCharacters" type="text" default="3" size="5" label="Minimum Keyword Characters" description="Minimum number of characters in each keyword.  eg. This may be used to stop words with less than 3 characters 'st, to, we'." />
+		<param name="titleKeywordCount" type="text" default="5" size="5" label="# Title Keywords" description="Number of keywords to be placed in the title." />
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="Meta Tags" label="" description="" />
+		<param name="metaKeywordsCount" type="text" default="25" size="5" label="Keywords Count" description="Number of meta keywords." />
+		<param name="metaDescriptionMinLength" type="text" default="80" size="5" label="Minimum Description Length" description="Minimum Length of the meta description." />
+		<param name="metaDescriptionMaxLength" type="text" default="150" size="5" label="Maximum Description Length" description="Maximum Length of the meta description." />
+		<param name="showGenerator" type="radio" default="1" label="Generator" description="Enable the JoomSEO Generator TAG.  Please note, by leaving this enabled it will not affect SEO but keeps me warm and fuzzy inside">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="Keyword Filter" label="" description="" />
+		<param name="stickyWords" type="textarea" rows="1" cols="100" default="" label="Sticky Words" description="Words that are included in the counting process to add more weight to the word." />
+		<param name="badWords" type="textarea" rows="2" cols="100" default="0 1 2 3 4 5 6 7 8 9 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z about an are as at be by com de en for from how in is it its la of on or that the this to was what when where who will with und the www and all has been your us up youll can if youve do know we not many you our but there they then more" size="50" label="Bad Words" description="Words that we do not want included in the results." />
+		<param name="badCharacters" type="textarea" rows="1" cols="100" default="0 1 2 3 4 5 6 7 8 9 &gt; &lt; &amp; - , . ; : ) ( ? ! { } [ ] / ' &quot; %" label="Bad Characters" description="Characters to be removed from the keyword results." />
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="Front Page" label="" description="" />
+		<param name="frontpageEnabled" type="radio" default="1" label="Enabled?" description="Enable JoomSEO on the front page?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="Frontpage Specific Activation" label="" description="" />
+		<param name="disableFrontpageTitle" type="radio" default="0" label="Disable Frontpage Title" description="Disable automatic title generation on the front page and use the Joomla default title.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="disableFrontpageKeywords" type="radio" default="0" label="Disable Frontpage Keywords" description="Disable automatic meta keyword generation on the front page and use the Joomla defined meta keywords.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="disableFrontpageDescription" type="radio" default="0" label="Disable Frontpage Description" description="Disable automatic meta description generation on the front page and use the Joomla defined meta description.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="Frontpage Overrides" label="" description="" />
+		<param name="overrideFrontPageTitle" type="text" default="" size="100" label="Title" description="Override the frontpage title with this title." />
+		<param name="overrideFrontPageKeywords" type="text" default="" size="100" label="Meta Keywords" description="Override the meta keywords on the frontpage with these keywords.  Add each keyword seperated by a space. eg. 'joomseo joomla'" />
+		<param name="overrideFrontPageDescription" type="text" default="" size="100" label="Meta Description" description="Override the meta description on the frontpage with this description." />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="SEO / Accessability" label="" description="" />
+		<param name="addHeadingTags" type="list" default="0" label="Heading Tags" description="Adds H1 - H6 Tags for Accessability and SEO tactics">
+
+			<option value="0">No</option>
+
+			<option value="1">Heading 1</option>
+
+			<option value="2">Heading 2</option>
+
+			<option value="3">Heading 3</option>
+
+			<option value="4">Heading 4</option>
+
+			<option value="5">Heading 5</option>
+
+			<option value="6">Heading 6</option>
+
+		</param>
+
+	</params>
+
+</install>

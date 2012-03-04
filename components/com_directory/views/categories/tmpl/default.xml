@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 10880 2008-08-31 17:51:53Z willebil $ -->
+<metadata>
+	<layout title="Contact Categories Layout">
+		<message>
+			<![CDATA[ Contact Categories Layout. ]]>
+		</message>
+	</layout>
+	<files>
+		<folder>/administrator/components/com_directory/elements</folder>
+	</files>
+	<state>
+		<name>Contacts Categories Layout</name>
+		<description>The Contact Categories Layout displays a list of contact categories.</description>
+		<url addpath="/administrator/components/com_directory/elements">
+			<param name="contact_section" type="contactSection" default="0" label="Select Contact Section" description="The section of contacts to show" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

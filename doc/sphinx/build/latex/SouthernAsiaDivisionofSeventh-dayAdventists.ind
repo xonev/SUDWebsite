@@ -1,0 +1,72 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter A
+  \item add
+    \subitem article, \hyperpage{4}
+    \subitem contact, \hyperpage{20}
+    \subitem contact category, \hyperpage{23}
+    \subitem picture to article, \hyperpage{8}
+  \item article
+    \subitem add, \hyperpage{4}
+    \subitem add picture, \hyperpage{8}
+    \subitem manage, \hyperpage{1}
+    \subitem manage frontpage, \hyperpage{14}
+    \subitem order frontpage, \hyperpage{15}
+    \subitem remove from frontpage, \hyperpage{16}
+
+  \indexspace
+  \bigletter C
+  \item contact
+    \subitem add, \hyperpage{20}
+    \subitem delete, \hyperpage{22}
+    \subitem edit, \hyperpage{20}
+  \item contact category
+    \subitem add, \hyperpage{23}
+
+  \indexspace
+  \bigletter D
+  \item delete
+    \subitem contact, \hyperpage{22}
+  \item directory
+    \subitem add contact, \hyperpage{20}
+    \subitem add contact category, \hyperpage{23}
+    \subitem delete contact, \hyperpage{22}
+    \subitem edit contact, \hyperpage{20}
+    \subitem manage contact, \hyperpage{18}
+
+  \indexspace
+  \bigletter E
+  \item edit
+    \subitem contact, \hyperpage{20}
+
+  \indexspace
+  \bigletter F
+  \item frontpage
+    \subitem manage article, \hyperpage{14}
+    \subitem order articles, \hyperpage{15}
+    \subitem remove article, \hyperpage{16}
+
+  \indexspace
+  \bigletter M
+  \item manage
+    \subitem article, \hyperpage{1}
+    \subitem contact, \hyperpage{18}
+    \subitem frontpage article, \hyperpage{14}
+
+  \indexspace
+  \bigletter O
+  \item order
+    \subitem frontpage articles, \hyperpage{15}
+
+  \indexspace
+  \bigletter P
+  \item picture
+    \subitem add to article, \hyperpage{8}
+
+  \indexspace
+  \bigletter R
+  \item remove
+    \subitem article from frontpage, \hyperpage{16}
+
+\end{theindex}

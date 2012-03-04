@@ -1,0 +1,1 @@
+ALTER TABLE `jos_churches` ADD COLUMN `telephone` VARCHAR(64) NULL;

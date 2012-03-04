@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS `jos_conferences` 
+	(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+		`conference_name` VARCHAR(255) NOT NULL UNIQUE,
+		`category_id` INT REFERENCES `jos_categories` (id) ON DELETE RESTRICT);
+
+CREATE TABLE IF NOT EXISTS `jos_states`
+	(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		`name` VARCHAR(255) NOT NULL UNIQUE);
+
+CREATE TABLE IF NOT EXISTS `jos_churches`
+	(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		`name` VARCHAR(255) NOT NULL,
+		`street` VARCHAR(255) NOT NULL,
+		`street2` VARCHAR(255),
+		`city` VARCHAR(255),
+		`state_id` INT NOT NULL REFERENCES `jos_states` (id) ON DELETE RESTRICT,
+		`conference_id` INT NOT NULL REFERENCES `jos_conferences` (id) ON DELETE RESTRICT);

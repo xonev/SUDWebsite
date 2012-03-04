@@ -1,0 +1,93 @@
+.. index::
+   single: directory; manage contact
+   single: manage; contact
+
+Managing the Directory Contacts
+===============================
+
+The management of the contacts in the directory is accomplished through the directory component.  It can be accessed by selecting “Contacts” from the “Directory” sub menu of the “Components” menu.  MAKE SURE THAT YOU DO NOT TRY TO USE THE “Contacts” COMPONENT.  It is not the same component and it will cause you to waste your time.
+
+.. image:: images/directoryContactsAccess.*
+   :align: center
+
+The way the contacts are organized is a little bit more complicated than any other entities on the Southern Asia Division website.  Each contact can have multiple positions and each position can be with a different “Department” or “Category.”  Each “Department” or “Category” is then a member of a “Section.”  The “Sections” are what determine where a contact will show up.  For example, a Contact that has a Position in a Department that is in the “Southern Asia Division” Section will show up in the main directory on the website.  Similarly, a Contact that has a Position in one of the “Union” Categories (but not a department in the “Southern Asia Division” section) will not show up in the main directory, but they will show up in the list of contacts for that Union.  A diagram may be useful for understanding the organization here.
+
+.. image:: images/directoryContactsOrgDiagram.*
+   :align: center
+
+Now that you have some idea of how the contacts portion of the directory component is organized we can begin.  Let's start by adding a new contact.
+
+.. index::
+   single: directory; edit contact
+   single: directory; add contact
+   pair: edit; contact
+   pair: add; contact
+
+Create a New Contact/Edit a Contact
+-----------------------------------
+
+1. The first step to creating a new contact is clicking on the “New” button in the upper right hand corner.  (To edit a contact, click on the contact's name).
+
+.. image:: images/directoryContactsNewButton.*
+   :align: center
+
+2. Once you find yourself on the New Contact page, you can start by filling out the “Details.”  The only fields here that are necessary to fill out are “First Name” and “Last Name.”  Alias will be populated automatically and the others do not need to be changed.
+
+.. image:: images/directoryContactsNewContactDetails.*
+   :align: center
+
+3. After filling out the “Details” the next step is to fill out the “Information” below it.  All that is involved with that is filling out the e-mail address, telephone number and any relevant positions.
+
+.. image:: images/directoryContactsNewContactInformation.*
+   :align: center
+
+4. Now, if the contact you are entering has only one position then your task should be easy, simply fill out the title of the Contact's Position in the first box, you can skip filling out the order, and select a “Department” from the drop-down box.  If you need to fill out another position, then click on the green “+” after filling out the first position and you will be able to add a new position.
+
+.. image:: images/directoryContactsNewContactPosition.*
+   :align: center
+
+5. If you mess up adding a position and need to delete it, all you have to do is click on the red “X” next to the position you need to delete.  Now all you need to do is save the changes you've made.  Just click on “Save” to save your changes and return to the list of contacts or click “Apply” to save your changes and stay on the same page.
+
+.. image:: images/directoryContactsSaveApply.*
+   :align: center
+
+6. That should also cover the information that you will need to edit a contact.  The only thing that would be different is how you would access the contact.  Simply click on the contact's name from the contact list.
+
+.. index::
+   single: directory; delete contact
+   pair: delete; contact
+
+Deleting Contacts
+-----------------
+
+* Deleting contacts is very simple.  Just check the boxes next to the contacts you wish to delete, then click on the “Delete” button.
+
+.. image:: images/directoryContactsDelete.*
+   :align: center
+
+.. image:: images/directoryContactsDeleteButton.*
+   :align: center
+
+.. index::
+   single: directory; add contact category
+   pair: add; contact category
+
+Adding/Editing Contact Categories
+---------------------------------
+
+1. The first step to organizing the directory contact categories is to move to the category management page.  To do that select the “Categories” item in the “Directory” sub menu in the “Component” menu.
+
+.. image:: images/directoryContactCategoriesAccess.*
+   :align: center
+
+2. To add a category, click on the “New” button in the upper right hand corner.  (If you want to edit a category, just click on the name of the category).
+
+.. image:: images/directoryContactCategoriesNewButton.*
+   :align: center
+
+3. Now fill in the Details for the category – make sure to fill in the “Title” field and select a “Section.”  If the category is a department in the Southern Asia Division than you will want to select “Southern Asia Division” as the section.  If the category is a Union, then select “Unions” as the section.
+
+.. image:: images/directoryContactCategoriesDetails.*
+   :align: center
+
+4. Now you can fill in a description for the directory if you'd like using the editor (see Managing Articles for more information about the editor).  Finally, just click on “Save” or “Apply” in the upper right hand corner to save your changes.

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="component" version="1.5">
+  <name>Xmap</name>
+  <creationDate>2008-08-01</creationDate>
+  <author>Guillermo Vargas</author>
+  <copyright>This component is released under the GNU/GPL License</copyright>
+  <authorEmail>guille@vargas.co.cr</authorEmail>
+  <authorUrl>http://joomla.vargas.co.cr</authorUrl>
+  <version>1.2</version>
+  <license>GNU/GPL</license>
+  <description>Xmap - Sitemap Generator for Joomla!</description>
+  <install />
+  <uninstall />
+  <installfile>install.xmap.php</installfile>
+  <uninstallfile>uninstall.xmap.php</uninstallfile>
+  <params>
+	<param name="sitemap" type="text" default="" label="Sitemap ID" description="The sitemap's id you want to link to" />
+  </params>
+  <files>
+	<filename>xmap.xml.php</filename>
+	<filename>xmap.html.php</filename>
+	<filename>xmap.php</filename>
+	<filename>gss.xsl</filename>
+	<filename>metadata.xml</filename>
+	<filename>index.html</filename>
+	<filename>css/index.html</filename>
+	<filename>css/xmap.css</filename>
+	<filename>cache/index.html</filename>
+  </files>
+  <images>
+  	<filename>images/index.html</filename>
+  	<filename>images/img_blue.gif</filename>
+  	<filename>images/img_green.gif</filename>
+  	<filename>images/img_grey.gif</filename>
+  	<filename>images/img_orange.gif</filename>
+  	<filename>images/img_red.gif</filename>
+  	<filename>images/txt_blue.gif</filename>
+  	<filename>images/txt_green.gif</filename>
+  	<filename>images/txt_grey.gif</filename>
+  	<filename>images/txt_orange.gif</filename>
+  	<filename>images/txt_red.gif</filename>
+  </images>
+  <administration>
+		<menu>Xmap</menu>
+		<files>
+			<filename>admin.xmap.php</filename>
+			<filename>admin.xmap.html.php</filename>
+			<filename>toolbar.xmap.php</filename>
+			<filename>toolbar.xmap.html.php</filename>
+			<filename>index.html</filename>
+			<filename>admin.js</filename>
+			<filename>admin1.css</filename>
+			<filename>ajaxResponse.php</filename>
+			<filename>elements/sitemap.php</filename>
+			<filename>elements/index.html</filename>
+			<filename>classes/XmapCache.php</filename>
+			<filename>classes/XmapConfig.php</filename>
+			<filename>classes/XmapSitemap.php</filename>
+			<filename>classes/XmapPlugins.php</filename>
+			<filename>classes/XmapPlugin.php</filename>
+			<filename>classes/XmapAdmin.php</filename>
+			<filename>classes/XmapPluginInstaller.php</filename>
+			<filename>classes/index.html</filename>
+			<filename>language/dutch.php</filename>
+			<filename>language/bulgarian.php</filename>
+			<filename>language/english.php</filename>
+			<filename>language/french.php</filename>
+			<filename>language/italian.php</filename>
+			<filename>language/spanish.php</filename>
+			<filename>language/swedish.php</filename>
+			<filename>language/index.html</filename>
+			<filename>language/hungarian.php</filename>
+			<filename>language/hungariani.php</filename>
+			<filename>language/german.php</filename>
+			<filename>language/chinese.php</filename>
+			<filename>language/portuguese.php</filename>
+			<filename>language/srpski.php</filename>
+			<filename>language/polish.php</filename>
+			<filename>language/romanian.php</filename>
+			<filename>language/turkish.php</filename>
+			<filename>language/finnish.php</filename>
+			<filename>extensions/index.html</filename>
+			<filename>extensions/com_content.php</filename>
+			<filename>extensions/com_content.xml</filename>
+		</files>
+		<images>
+			<filename>images/logo.jpg</filename>
+			<filename>images/bor_bl.gif</filename>
+			<filename>images/bor_bot.gif</filename>
+			<filename>images/bor_br.gif</filename>
+			<filename>images/bor_left.gif</filename>
+			<filename>images/bor_right.gif</filename>
+			<filename>images/bor_tl.gif</filename>
+			<filename>images/bor_top.gif</filename>
+			<filename>images/bor_tr.gif</filename>
+			<filename>images/default.gif</filename>
+			<filename>images/no_default.gif</filename>
+			<filename>images/options.gif</filename>
+			<filename>images/options_over.gif</filename>
+			<filename>images/optionsbg.gif</filename>
+		</images>
+  </administration>
+</install>
